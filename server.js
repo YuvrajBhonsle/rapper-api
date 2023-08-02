@@ -49,3 +49,5 @@ app.get("/api/:name", (request, response) => {
 app.listen(process.env.PORT || PORT, () => {
   console.log(`The server is running on ${PORT}. Gotta catch it up!`);
 })
+
+module.exports = app;
