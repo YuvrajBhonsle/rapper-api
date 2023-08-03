@@ -1,15 +1,16 @@
 {
   "version": 2,
+  "name": "rap-api",
   "builds": [
     {
       "src": "server.js",
-      "use": "@now/node"
+      "use": "@vercel/node"
     }
   ],
   "routes": [
     {
-      "source": "/(.*)",
-      "destination": "server.js"
+      "src": "/(.*)",
+      "dest": "/server.js"
     }
   ]
 }
